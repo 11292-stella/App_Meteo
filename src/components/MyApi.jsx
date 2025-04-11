@@ -33,7 +33,7 @@ const MyApi = function () {
               <Card className="bg-info text-light ">
                 <Card.Img
                   variant="top"
-                  src={`https://www.lamiabellatoscana.it/wp-content/uploads/2020/02/Reggello.jpg`}
+                  src={`https://www.tuscanyreview.co.uk/uploads/2/6/3/6/26365745/reggello-tuscany-8.jpg`}
                 />
                 <Card.Body>
                   <Card.Title>{weatherData.name}</Card.Title>
