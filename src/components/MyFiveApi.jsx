@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { Container, Row, Col, Card, Button } from "react-bootstrap"
+import { Link } from "react-router-dom"
 
 const MyFiveApi = function () {
   const [weatherData, setWeatherData] = useState()
@@ -44,7 +45,9 @@ const MyFiveApi = function () {
                     <strong>Latitudine:</strong> {weatherData.coord.lat} <br />
                     <strong>Longitudine:</strong> {weatherData.coord.lon}
                   </Card.Text>
-                  <Button variant="primary">Aggiorna</Button>
+                  <Link to={`/city-details/${weatherData.name.toLowerCase()}`}>
+                    <Button variant="primary">Dettagli città</Button>
+                  </Link>
                 </Card.Body>
               </Card>
             )}

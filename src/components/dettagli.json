@@ -1,0 +1,58 @@
+{
+  "florence": {
+    "id": 1,
+    "name": "Firenze",
+    "description": "Firenze è la capitale della regione Toscana ed è una delle città più famose al mondo per la sua arte, storia e architettura. È conosciuta come la culla del Rinascimento, ospita il celebre Museo degli Uffizi e la magnifica Cattedrale di Santa Maria del Fiore.",
+    "image": "https://www.visittuscany.com/shared/visittuscany/immagini/firenze-pontevecchio.jpg?__scale=w:1920,h:1000,t:2,q:85",
+    "note": "376000"
+  },
+  "milan": {
+    "id": 2,
+    "name": "Milano",
+    "description": "Milano è la capitale della moda e del design, ed è una delle principali città finanziarie d'Italia. Famosa per la sua architettura moderna, il Duomo e l'opera lirica alla Scala, è anche la sede di numerosi musei e gallerie d'arte.",
+    "image": "https://blog.italotreno.com/wp-content/uploads/2019/04/Milano-in-poche-ore-credits-Lorenzoclick-via-Flickr-1140x660.jpg",
+    "note": "1400000"
+  },
+  "province of palermo": {
+    "id": 3,
+    "name": "Palermo",
+    "description": "Palermo, capitale della Sicilia, è una città ricca di storia, cultura e tradizioni. Famosa per i suoi mercati, le chiese e i palazzi storici, è anche un punto di riferimento per la cucina siciliana.",
+    "image": "https://www.costacrociere.it/content/dam/costa/costa-magazine/article-images/palermo-beaches/9-spiagge-palermo-694x390.jpg.image.694.390.low.jpg",
+    "note": "670000"
+  },
+  "niscemi": {
+    "id": 4,
+    "name": "Niscemi",
+    "description": "Niscemi è un comune in provincia di Caltanissetta, situato nel cuore della Sicilia. È conosciuto per la sua tranquillità e per i paesaggi naturali che circondano la città.",
+    "image": "https://www.festadellamusicaitalia.it/site/assets/files/8851/niscemi.1200x1200.jpg",
+    "note": "28000"
+  },
+  "reggello": {
+    "id": 5,
+    "name": "Reggello",
+    "description": "Reggello è un comune in provincia di Firenze, nella regione Toscana. È famoso per la sua bellezza naturale, i boschi, e i panorami mozzafiato sulle colline circostanti. È anche un punto di partenza per escursioni nel Parco delle Foreste Casentinesi.",
+    "image": "https://www.lamiabellatoscana.it/wp-content/uploads/2020/02/Reggello.jpg",
+    "note": "25000"
+  },
+  "trieste": {
+    "id": 6,
+    "name": "Trieste",
+    "description": "Trieste è una città situata nel nord-est d'Italia, affacciata sul mare Adriatico. È un importante porto commerciale e culturale, con una forte influenza mitteleuropea e una tradizione di caffè storici.",
+    "image": "https://st3.idealista.it/news/archivie/styles/fullwidth_xl/public/2025-04/images/alain-rouiller-2jvb2nt2qt4-unsplash.jpg?VersionId=ertz9CTgbYSjXNJtgpgx4L_yJId8wv5Q&itok=lwSdNzsX",
+    "note": "200000"
+  },
+  "bolzano": {
+    "id": 7,
+    "name": "Bolzano",
+    "description": "Bolzano è una città situata nel nord Italia, nel cuore delle Alpi. Con una forte influenza tedesca, è famosa per il suo paesaggio alpino, la sua architettura medievale e per il famoso Mercatino di Natale.",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/bolzano-le-dolomiti-e-la-ruota-panoramica-royalty-free-image-1670253555.jpg",
+    "note": "105000"
+  },
+  "catania": {
+    "id": 8,
+    "name": "Catania",
+    "description": "Catania è una città situata sulla costa orientale della Sicilia, ai piedi dell'Etna. È famosa per la sua storia antica, l'architettura barocca e il suo vivace centro storico. Il vulcano Etna domina il paesaggio e rappresenta una delle principali attrazioni naturali della zona.",
+    "image": "https://www.italia.it/content/dam/tdh/it/interests/sicilia/catania/catania/media/20210624132554-cattedrale-di-sant-agata-catania-sicilia-gettyimages-467663396.jpg",
+    "note": "311000"
+  }
+}

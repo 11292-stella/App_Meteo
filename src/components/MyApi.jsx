@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { Container, Row, Col, Card, Button } from "react-bootstrap"
+import { Link } from "react-router-dom"
 
 const MyApi = function () {
   const [weatherData, setWeatherData] = useState()
@@ -29,7 +30,7 @@ const MyApi = function () {
         <Row>
           <Col>
             {weatherData && (
-              <Card className="bg-info text-light">
+              <Card className="bg-info text-light ">
                 <Card.Img
                   variant="top"
                   src={`https://www.lamiabellatoscana.it/wp-content/uploads/2020/02/Reggello.jpg`}
@@ -44,7 +45,9 @@ const MyApi = function () {
                     <strong>Latitudine:</strong> {weatherData.coord.lat} <br />
                     <strong>Longitudine:</strong> {weatherData.coord.lon}
                   </Card.Text>
-                  <Button variant="primary">Aggiorna</Button>
+                  <Link to={`/city-details/${weatherData.name.toLowerCase()}`}>
+                    <Button variant="primary">Dettagli città</Button>
+                  </Link>
                 </Card.Body>
               </Card>
             )}
