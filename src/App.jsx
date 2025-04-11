@@ -20,7 +20,7 @@ function App() {
       <div className="d-flex flex-column min-vh-100">
         <MyNav />
         <main className="flex-grow-1 container mt-4 bg">
-          <h1 className="text-center">Meteo Città</h1>
+          <h1 className="text-center">Citywide weather</h1>
 
           <Routes>
             <Route

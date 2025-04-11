@@ -1,12 +1,32 @@
+import { useState } from "react"
 import Button from "react-bootstrap/Button"
 import Container from "react-bootstrap/Container"
 import Form from "react-bootstrap/Form"
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
-import NavDropdown from "react-bootstrap/NavDropdown"
+import Modal from "react-bootstrap/Modal"
 import { Link } from "react-router-dom"
 
 const MyNav = function () {
+  const [searchInput, setSearchInput] = useState("")
+  const [showModal, setShowModal] = useState(false)
+  const [selectedCity, setSelectedCity] = useState("")
+
+  const cityList = ["reggello", "catania", "bolzano"] // puoi espandere questo
+
+  const handleSearch = (e) => {
+    e.preventDefault()
+    const cityMatch = cityList.find(
+      (city) => city.toLowerCase() === searchInput.toLowerCase()
+    )
+    if (cityMatch) {
+      setSelectedCity(cityMatch)
+      setShowModal(true)
+    } else {
+      alert("Città non trovata") // o puoi mostrare una modale diversa
+    }
+  }
+
   return (
     <>
       <Navbar expand="lg" bg="dark" data-bs-theme="dark">
@@ -23,19 +43,43 @@ const MyNav = function () {
                 menu
               </Link>
             </Nav>
-            <Form className="d-flex">
+            <Form className="d-flex" onSubmit={handleSearch}>
               <Form.Control
                 type="search"
-                placeholder="Search"
+                placeholder="Cerca città"
                 className="me-2"
-                aria-label="Search"
+                value={searchInput}
+                onChange={(e) => setSearchInput(e.target.value)}
               />
-              <Button variant="outline-success">Search</Button>
+              <Button variant="outline-success" type="submit">
+                Cerca
+              </Button>
             </Form>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
+      <Modal show={showModal} onHide={() => setShowModal(false)}>
+        <Modal.Header className="bg-info" closeButton>
+          <Modal.Title>Città trovata</Modal.Title>
+        </Modal.Header>
+        <Modal.Body className="bg-info">
+          Hai cercato <strong>{selectedCity}</strong>. Puoi vedere i dettagli
+          cliccando il bottone qui sotto.
+        </Modal.Body>
+        <Modal.Footer className="bg-info">
+          <Link to={`/city-details/${selectedCity.toLowerCase()}`}>
+            <Button variant="success" onClick={() => setShowModal(false)}>
+              Vai alla pagina
+            </Button>
+          </Link>
+          <Button variant="secondary" onClick={() => setShowModal(false)}>
+            Chiudi
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </>
   )
 }
+
 export default MyNav

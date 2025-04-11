@@ -60,3 +60,8 @@ body {
   text-align: center;
   padding: 1.5rem 0;
 }
+
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3rem;
+}
