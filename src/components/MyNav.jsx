@@ -12,7 +12,16 @@ const MyNav = function () {
   const [showModal, setShowModal] = useState(false)
   const [selectedCity, setSelectedCity] = useState("")
 
-  const cityList = ["reggello", "catania", "bolzano"] // puoi espandere questo
+  const cityList = [
+    "reggello",
+    "catania",
+    "bolzano",
+    "niscemi",
+    "province of palermo",
+    "trieste",
+    "florence",
+    "milan",
+  ]
 
   const handleSearch = (e) => {
     e.preventDefault()
@@ -23,7 +32,7 @@ const MyNav = function () {
       setSelectedCity(cityMatch)
       setShowModal(true)
     } else {
-      alert("Città non trovata") // o puoi mostrare una modale diversa
+      alert("Città non trovata")
     }
   }
 
