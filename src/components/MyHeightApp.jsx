@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react"
 import { Container, Row, Col, Card, Button } from "react-bootstrap"
 
-const MyApi = function () {
+const MyHeightApi = function () {
   const [weatherData, setWeatherData] = useState()
 
   useEffect(() => {
-    const URL = `https://api.openweathermap.org/data/2.5/weather?q=reggello&units=metric&appid=3f56e756d1e7b514542f2dd2face98a8`
+    const URL = `https://api.openweathermap.org/data/2.5/weather?q=trieste&units=metric&appid=3f56e756d1e7b514542f2dd2face98a8`
     fetch(URL)
       .then((response) => {
         if (response.ok) {
@@ -32,7 +32,7 @@ const MyApi = function () {
               <Card className="bg-info text-light">
                 <Card.Img
                   variant="top"
-                  src={`https://www.lamiabellatoscana.it/wp-content/uploads/2020/02/Reggello.jpg`}
+                  src={`https://images.winalist.com/blog/wp-content/uploads/2024/09/24144526/shutterstock_2464824941-1500x999.jpg`}
                 />
                 <Card.Body>
                   <Card.Title>{weatherData.name}</Card.Title>
@@ -54,4 +54,4 @@ const MyApi = function () {
     </>
   )
 }
-export default MyApi
+export default MyHeightApi

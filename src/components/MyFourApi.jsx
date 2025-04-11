@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react"
 import { Container, Row, Col, Card, Button } from "react-bootstrap"
 
-const MyApi = function () {
+const MyFourApi = function () {
   const [weatherData, setWeatherData] = useState()
 
   useEffect(() => {
-    const URL = `https://api.openweathermap.org/data/2.5/weather?q=reggello&units=metric&appid=3f56e756d1e7b514542f2dd2face98a8`
+    const URL = `https://api.openweathermap.org/data/2.5/weather?q=Catania,it&units=metric&appid=3f56e756d1e7b514542f2dd2face98a8`
     fetch(URL)
       .then((response) => {
         if (response.ok) {
@@ -32,14 +32,14 @@ const MyApi = function () {
               <Card className="bg-info text-light">
                 <Card.Img
                   variant="top"
-                  src={`https://www.lamiabellatoscana.it/wp-content/uploads/2020/02/Reggello.jpg`}
+                  src={`https://www.passionesicilia.it/wp-content/uploads/2020/01/Catania.jpg`}
                 />
                 <Card.Body>
                   <Card.Title>{weatherData.name}</Card.Title>
                   <Card.Text>
                     <strong>Descrizione:</strong>{" "}
                     {weatherData.weather[0].description} <br />
-                    <strong>Temperatura:</strong> {weatherData.main.temp} °C{" "}
+                    <strong>Temperatura:</strong> {weatherData.main.temp} °F{" "}
                     <br />
                     <strong>Latitudine:</strong> {weatherData.coord.lat} <br />
                     <strong>Longitudine:</strong> {weatherData.coord.lon}
@@ -54,4 +54,4 @@ const MyApi = function () {
     </>
   )
 }
-export default MyApi
+export default MyFourApi
