@@ -19,7 +19,7 @@ Una semplice applicazione meteo sviluppata con **HTML**, **CSS** e **JavaScript*
 
 ## 📸 Screenshot
 
-![screenshot app meteo](Screenshot 2025-06-13 180425.png)
+![screenshot app meteo](screenshot-app-meteo.png)
 
 ## 🧪 Come provarla
 
